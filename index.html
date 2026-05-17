@@ -1264,6 +1264,17 @@ Faith evident in works ministries is a church of all nations, we believe in mira
         All rights reserved
     </p>
 </div>
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
 
+    document.querySelector(this.getAttribute('href'))
+      .scrollIntoView({
+        behavior: 'smooth'
+      });
+  });
+});
+                           </script>
 </body>
 </html>

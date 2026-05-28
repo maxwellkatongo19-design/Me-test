@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://maxwellkatongo19-design.github.io/Me-test/sitemap.xml

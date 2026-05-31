@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Church Gallery</title>
+</head>
+
+<body style="
+  margin:0;
+  padding:0;
+  background:#000;
+  font-family:Arial, sans-serif;
+  color:white;
+">
+
+<!-- GALLERY SECTION -->
+<section style="
+  padding:70px 25px;
+  text-align:center;
+  background:#0b0b0b;
+  color:white;
+
+  border-top:4px solid white;
+  border-bottom:6px solid gold;
+  border-left:1px solid #333;
+  border-right:1px solid #333;
+
+  border-radius:30px;
+
+  max-width:1100px;
+  margin:40px auto;
+
+  box-shadow:0 0 25px rgba(255,215,0,0.08);
+">
+
+  <h1 style="
+    color:gold;
+    margin-bottom:20px;
+    font-size:38px;
+    letter-spacing:1px;
+  ">
+    Church Media Gallery
+  </h1>
+
+  <p style="
+    font-size:18px;
+    line-height:1.7;
+    color:#d6d6d6;
+    max-width:750px;
+    margin:0 auto 60px auto;
+  ">
+    Watch powerful moments, worship experiences, sermons, and church gatherings captured in faith and excellence.
+  </p>
+
+  <!-- IMAGE & VIDEO GRID -->
+  <div style="
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+  ">
+
+    <!-- ITEM 1 -->
+    <div style="
+      background:#111;
+      padding:20px;
+      border-radius:20px;
+      border:1px solid #2a2a2a;
+      box-shadow:0 0 15px rgba(255,215,0,0.05);
+    ">
+      <img src="Images/Cm.jpg" width="100%" style="
+        border-radius:12px;
+      ">
+      <p style="
+        color:#cfcfcf;
+        margin-top:12px;
+        line-height:1.6;
+      ">
+        Full surmon available on our social media platforms 
+      </p>
+    </div>
+
+    <!-- ITEM 2 -->
+    <div style="
+      background:#111;
+      padding:20px;
+      border-radius:20px;
+      border:1px solid #2a2a2a;
+      box-shadow:0 0 15px rgba(255,215,0,0.05);
+    ">
+      <img src="Images/MG.jpg" width="100%" style="
+        border-radius:12px;
+      ">
+      <p style="
+        color:#cfcfcf;
+        margin-top:12px;
+        line-height:1.6;
+      ">
+        Full surmon available on our social media platforms 
+      </p>
+    </div>
+
+    <!-- ITEM 3 -->
+    <div style="
+      background:#111;
+      padding:20px;
+      border-radius:20px;
+      border:1px solid #2a2a2a;
+      box-shadow:0 0 15px rgba(255,215,0,0.05);
+    ">
+      <img src="Life.jpg" width="100%" style="
+        border-radius:12px;
+      ">
+      <p style="
+        color:#cfcfcf;
+        margin-top:12px;
+        line-height:1.6;
+      ">
+        Full surmon available on our social media platforms 
+      </p>
+    </div>
+<iframe
+  src="https://www.tiktok.com/embed/v2/7625172324009987348"
+  width="100%"
+  height="600"
+  style="
+    border:none;
+    border-radius:12px;
+  "
+  allowfullscreen>
+</iframe>
+
+  <!-- BACK BUTTON -->
+  <div style="margin-top:60px;">
+
+    <a href="index.html" style="
+      display:inline-block;
+      padding:15px 40px;
+      background:gold;
+      color:black;
+      text-decoration:none;
+      font-weight:bold;
+      font-size:17px;
+      border-radius:50px;
+      transition:0.3s ease;
+      box-shadow:0 0 15px rgba(255,215,0,0.25);
+    ">
+      Back To Home
+    </a>
+
+  </div>
+
+</section>
+<script>
+  // SELECT ALL VIDEOS
+  const videos = document.querySelectorAll("video");
+
+  videos.forEach((video) => {
+
+    video.addEventListener("play", () => {
+
+      // PAUSE ALL OTHER VIDEOS
+      videos.forEach((otherVideo) => {
+
+        if (otherVideo !== video) {
+          otherVideo.pause();
+        }
+
+      });
+
+    });
+
+  });
+</script>
+</body>
+</html>
